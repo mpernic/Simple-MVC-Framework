@@ -3,9 +3,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-include ("animal.php");
-include ("elephant.php");
-include ("penguin.php");
+include ("classes/animal.php");
+include ("classes/elephant.php");
+include ("classes/penguin.php");
 
 // creating object
 $ele = new elephant();
