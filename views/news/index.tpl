@@ -12,12 +12,14 @@
         <h1>News articles</h1>
 
 		<?php 
+      $path = parse_url(curPageURL(), PHP_URL_PATH);
             if ($articles):
             foreach ($articles as $a): ?>
 
 			<article>
 				<header>
-					<h1><a href="/news/details/<?php echo $a['id']; ?>"><?php echo $a['title']; ?></a></h1>
+					<h1><?php // print_r (parse_url(curPageURL(), PHP_URL_PATH)); ?></h1>
+          <h1><a href="<?php echo $path; ?>news/details/<?php echo $a['id']; ?>"><?php echo $a['title']; ?></a></h1>
 					<p><?php echo $a['category_name']; ?></p>
 					<p>Published on: <time pubdate="pubdate"><?php echo $a['date']; ?></time></p>
 				</header>
