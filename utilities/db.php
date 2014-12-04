@@ -19,4 +19,5 @@ class Db
 		}
 		return self::$db;
 	}
+  
 }
