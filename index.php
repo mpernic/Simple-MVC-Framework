@@ -22,6 +22,6 @@ function __autoload($class)
 	{
 		require_once HOME . DS . 'controllers'  . DS . strtolower($class) . '.php';
 	}
-
+}
 
 ?>
